@@ -1,0 +1,1 @@
+window.Economy={levelReward(id,perfect){const n=25+(id%20);SaveManager.addCoins(n+(perfect?25:0));return n+(perfect?25:0)},collect(){SaveManager.addCoins(5)}};

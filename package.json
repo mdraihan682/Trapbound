@@ -1,0 +1,16 @@
+{
+  "name": "trapbound-fat-dash",
+  "displayName": "Trapbound: Fat Dash",
+  "version": "1.0.0",
+  "description": "Original 500-level HTML5 Canvas Cordova game.",
+  "private": true,
+  "scripts": {
+    "android": "cordova run android",
+    "apk": "cordova build android --debug",
+    "aab": "cordova build android --release -- --packageType=bundle"
+  },
+  "devDependencies": {
+    "cordova": "^13.0.0",
+    "cordova-android": "15.1.0"
+  }
+}

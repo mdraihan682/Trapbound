@@ -1,0 +1,1 @@
+document.addEventListener('deviceready',()=>{AdManager.init();PurchaseManager.init();AudioManager.init();},false);document.addEventListener('visibilitychange',()=>{if(document.hidden&&window.Game){/* animation naturally stops when the page is hidden */}});

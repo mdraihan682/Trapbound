@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<title>Trapbound: Fat Dash</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<div id="hud">
+  <div class="hud-left"><span id="worldText">WORLD 1</span><span id="levelText">LEVEL 1</span></div>
+  <div class="hud-right"><span id="coinText">🪙 0</span><span id="deathText">☠ 0</span><button id="pauseBtn">Ⅱ</button></div>
+</div>
+<div id="menu" class="screen">
+  <h1>TRAPBOUND</h1><p class="subtitle">FAT DASH • 500 SURPRISE LEVELS</p>
+  <button data-action="play">PLAY</button>
+  <button data-action="levels">LEVELS</button>
+  <button data-action="shop">SHOP</button>
+  <button data-action="daily">DAILY CHALLENGE</button>
+  <button data-action="settings">SETTINGS</button>
+  <button data-action="howto">HOW TO PLAY</button>
+</div>
+<div id="levelScreen" class="screen hidden"><h2>WORLDS & LEVELS</h2><div id="worldGrid"></div><button data-action="back">BACK</button></div>
+<div id="shopScreen" class="screen hidden"><h2>SHOP <span id="shopCoins"></span></h2><div id="shopGrid"></div><button data-action="back">BACK</button></div>
+<div id="dailyScreen" class="screen hidden"><h2>DAILY CHALLENGE</h2><p>One fresh seeded challenge each day. Optional.</p><button id="dailyPlay">PLAY TODAY</button><button data-action="back">BACK</button></div>
+<div id="settingsScreen" class="screen hidden"><h2>SETTINGS</h2><button id="soundToggle">SOUND: ON</button><button id="shakeToggle">CAMERA SHAKE: ON</button><button data-action="back">BACK</button></div>
+<div id="howtoScreen" class="screen hidden"><h2>HOW TO PLAY</h2><p>Run, jump, learn the surprise, and reach the exit. Traps are designed to be discoverable and every level has a winnable route.</p><p>Collect coins and secrets for cosmetics. Nothing is required to finish the campaign.</p><button data-action="back">BACK</button></div>
+<div id="pauseScreen" class="screen hidden"><h2>PAUSED</h2><button id="resumeBtn">RESUME</button><button id="restartBtn">RESTART</button><button data-action="levels">LEVEL SELECT</button><button data-action="menu">MAIN MENU</button></div>
+<div id="completeScreen" class="screen hidden"><h2 id="completeTitle">LEVEL COMPLETE!</h2><p id="completeStats"></p><button id="nextBtn">NEXT LEVEL</button><button id="replayBtn">REPLAY</button><button data-action="levels">LEVEL SELECT</button></div>
+<div id="touchControls">
+  <button id="leftBtn">◀</button><button id="rightBtn">▶</button><button id="jumpBtn">▲</button>
+</div>
+<script src="js/save_manager.js"></script>
+<script src="js/input.js"></script>
+<script src="js/player.js"></script>
+<script src="js/trap_manager.js"></script>
+<script src="js/level_manager.js"></script>
+<script src="js/world_manager.js"></script>
+<script src="js/economy.js"></script>
+<script src="js/achievements.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/audio_manager.js"></script>
+<script src="js/ad_manager.js"></script>
+<script src="js/purchase_manager.js"></script>
+<script src="js/ui_manager.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
